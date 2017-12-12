@@ -1,0 +1,23 @@
+import java.util.*;
+//random program - Rprg
+class Rprg
+{
+void f1(String str) //function which takes string as input
+{
+Random r = new Random();  
+int nbw= r.nextInt(9)+6; // generates a random number in betweeen 6&15
+System.out.println(str+" "+nbw);
+}
+}
+
+class random
+{
+public static void main(String args[])
+{
+Rprg r=new Rprg();
+System.out.println("Enter any name");
+Scanner sc= new Scanner(System.in);
+String str=sc.next();
+r.f1(str);
+}
+}
